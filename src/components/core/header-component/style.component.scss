@@ -1,0 +1,29 @@
+@import '../../../styles/spacing.scss';
+
+header {
+  padding: $standard-space;
+  display: flex;
+  align-items: center;
+
+  h1.title {
+    font-size: 20px;
+    margin: 0;
+  }
+
+  .spacer {
+    flex: 1
+  }
+
+  nav {
+    ul.nav-list {
+      display: flex;
+      margin: 0;
+
+      li.nav-item {
+        margin: 0;
+        padding: 0 12px;
+        list-style-type: none;
+      }
+    }
+  }
+}

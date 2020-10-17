@@ -1,0 +1,33 @@
+image: "node:lts-buster"
+
+variables:
+  GIT_SUBMODULE_STRATEGY: recursive
+
+# add 'node_modules' to cache for speeding up builds
+cache:
+  paths:
+    - node_modules/ # Node modules and dependencies
+
+before_script:
+  - apt-get update
+  - npm install
+
+run-test:
+  script:
+    - node --version
+
+# the 'pages' job will deploy and build your site to the 'public' path
+pages:
+  script:
+    # installs brew
+    - git clone https://github.com/Homebrew/brew ~/.linuxbrew/Homebrew
+    - mkdir ~/.linuxbrew/bin
+    - ln -s ~/.linuxbrew/Homebrew/bin/brew ~/.linuxbrew/bin
+    - eval $(~/.linuxbrew/bin/brew shellenv)
+    - brew install hugo
+    - hugo
+  artifacts:
+    paths:
+      - public
+  only:
+    - master # this job will affect only the 'master' branch

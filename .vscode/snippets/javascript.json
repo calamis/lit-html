@@ -1,0 +1,9 @@
+{
+  "Simple Log": {
+    "prefix": ["log", "simple-log"],
+    "body": [
+      "console.log()"
+    ],
+    "description": "Creates a simple printing on terminal for debug purposes"
+  }
+}

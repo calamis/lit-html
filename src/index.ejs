@@ -1,0 +1,17 @@
+<% const { app } = require('./config.json'); %><!DOCTYPE html>
+<html>
+  <head>
+    <%= require('./ejs-templates/head.partial.ejs')({ app }) %>
+  </head>
+  <body>
+    <!-- Put additional header components here -->
+    <header-component></header-component>
+    <!-- End components here -->
+    <%= require('./ejs-templates/main.partial.ejs')({ app }) %>
+
+    <!-- Put additional header components here -->
+    <footer-component></footer-component>
+    <!-- End components here -->
+    <%= require('./ejs-templates/script.partial.ejs')({ app, htmlWebpackPlugin }) %>
+  </body>
+</html>

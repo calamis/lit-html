@@ -1,0 +1,21 @@
+title = "Frontend"
+baseURL = "https://senti-techlabs.gitlab.io/products/core/experiments/web-application-experiment/frontend/"
+languageCode = "en-us"
+contentdir = "docs"
+archetypedir = "hugo/archetypes"
+resourcedir = "hugo/resources"
+assetdir = "hugo/assets"
+layoutdir = "hugo/layouts"
+publishdir = "public"
+themesdir = "hugo/themes"
+theme = "techdoc"
+disableKinds = [ "taxonomyTerm" ]
+pygmentsCodefences = true
+pygmentsCodeFencesGuesSsyntax = false
+pygmentsOptions = ""
+pygmentsStyle = "monokai"
+pygmentsUseClasses = false
+defaultContentLanguage = "en"
+
+[Params]
+menu_style = "open-menu"

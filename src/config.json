@@ -1,0 +1,61 @@
+{
+  "environment": {
+    "development": {
+      "firebase": {
+        "apiKey": "",
+        "authDomain": "",
+        "databaseURL": "https://<project-id>.firebaseio.com",
+        "projectId": "<project-id>",
+        "storageBucket": "<project-id>.appspot.com",
+        "messagingSenderId": "",
+        "appId": "",
+        "measurementId": ""
+      },
+      "backend": {
+        "url": "http://localhost:8080/"
+      }
+    },
+    "staging": {
+      "firebase": {
+        "apiKey": "",
+        "authDomain": "",
+        "databaseURL": "https://<project-id>.firebaseio.com",
+        "projectId": "<project-id>",
+        "storageBucket": "<project-id>.appspot.com",
+        "messagingSenderId": "",
+        "appId": "",
+        "measurementId": ""
+      },
+      "backend": {
+        "url": "http://localhost:8080/"
+      }
+    },
+    "production": {
+      "firebase": {
+        "firebase": {
+          "apiKey": "",
+          "authDomain": "",
+          "databaseURL": "https://<project-id>.firebaseio.com",
+          "projectId": "<project-id>",
+          "storageBucket": "<project-id>.appspot.com",
+          "messagingSenderId": "",
+          "appId": "",
+          "measurementId": ""
+        },
+        "backend": {
+          "url": "http://localhost:8080/"
+        }
+      }
+    },
+    "common": {
+
+    }
+  },
+  "app": {
+    "title": "Website App",
+    "description": "This is the web app",
+    "twitter": "tjmonsi",
+    "twitterCreator": "tjmonsi",
+    "image": ""
+  }
+}

@@ -1,0 +1,52 @@
+{
+  "[javascript]": {
+    "editor.tabSize": 2
+  },
+  "[python]": {
+    "editor.tabSize": 4
+  },
+  "editor.tabSize": 2,
+  "files.trimTrailingWhitespace": true,
+  "git.enableSmartCommit": true,
+  "git.autofetch": true,
+  "javascript.implicitProjectConfig.checkJs": true,
+  "javascript.implicitProjectConfig.experimentalDecorators": true,
+  "javascript.validate.enable": true,
+  "standard.enable": true,
+  "standard.semistandard": true,
+  "plopTemplates.plopCommand": "npx:plop",
+  "standard.options": {
+    "plugins": [
+      "html",
+      "standard",
+      "promise",
+      "mocha",
+      "html",
+      "@typescript-eslint",
+      "chai-expect"
+    ],
+    "parser": "babel-eslint",
+    "env": [
+      "mocha"
+    ],
+    "ignore": [
+      "example/dist",
+      "dist",
+      "dist/**",
+      "public",
+      "docs",
+      "hugo"
+    ],
+    "globals": [
+      "describe",
+      "it",
+      "after",
+      "before",
+      "expect"
+    ]
+  },
+  "standard.validate": [
+    "javascript",
+    "html"
+  ]
+}
