@@ -158,11 +158,6 @@
       "self"
     ]
   },
-  "sentiProjectTemplate": {
-    "version": "0.0.3",
-    "templateName": "Base Template",
-    "templateRepo": "git@gitlab.com:senti-techlabs/templates/base-template.git"
-  },
   "dependencies": {
     "@tjmonsi/lit-router": "0.0.16",
     "@vaadin/vaadin-rich-text-editor": "^1.3.0",
