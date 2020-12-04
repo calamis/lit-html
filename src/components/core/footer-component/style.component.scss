@@ -1,5 +1,6 @@
 @import '../../../styles/spacing.scss';
 @import '../../../styles/wrapper.scss';
+@import '../../../styles/mixins.scss';
 @import 'https://senti.ai/wp-content/themes/agmycoo/assets/css/iconfont.css?ver=1.0.1';
 
 footer {
@@ -40,6 +41,31 @@ footer {
 		&:first-of-type {
 			flex-shrink: 2;
 		}
+	}
+
+	.main__container {
+
+		@include for-phone-only {
+			display: block;
+			width: auto;
+		}
+
+		@include for-tablet-portrait-up {
+			display: block;	
+		}
+
+		@include for-tablet-landscape-up {
+			display: flex;
+		}
+
+		@include for-desktop-up {
+			display: flex;
+		}
+
+		@include for-big-desktop-up {
+			display: flex;
+		}
+
 	}
 }
 
