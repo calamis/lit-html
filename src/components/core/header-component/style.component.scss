@@ -1,7 +1,7 @@
 @import '../../../styles/spacing.scss';
+@import '../../../styles/wrapper.scss';
 
 header {
-  padding: $standard-space;
   display: flex;
   align-items: center;
 
@@ -10,19 +10,46 @@ header {
     margin: 0;
   }
 
+  .logo {
+    display: block;
+  }
+
+  .logo img {
+    max-width: 100%;
+    width: 150px;
+    height: 100%;
+  }
+
   .spacer {
     flex: 1
   }
 
   nav {
     ul.nav-list {
+      height: 100%;
       display: flex;
+      align-items: center;
       margin: 0;
 
       li.nav-item {
         margin: 0;
         padding: 0 12px;
         list-style-type: none;
+        text-decoration: none;
+
+        a {
+          font-size: 14px;
+          color: #333;
+          opacity: .888;
+          font-weight: 600;
+          list-style-type: none;
+          text-decoration: none;
+          text-transform: uppercase;
+
+          &:hover {
+            color: #000;
+          }
+        }
       }
     }
   }

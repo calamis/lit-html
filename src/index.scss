@@ -4,8 +4,18 @@ body {
   margin: 0;
   padding: 0;
   font-family: $font-family;
+  overflow-x: hidden;
 }
 
 main {
   min-height: calc(100vh - 100px)
+}
+
+section {
+	height: 100%;
+	padding: 20px;
+	margin: 0 auto;
+	width: 100%;
+	display: flex;
+	max-width: 1200px;
 }

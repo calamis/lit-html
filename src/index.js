@@ -7,6 +7,7 @@ function loadCoreComponents () {
   // use require instead of import to load the components
   require('./components/core/header-component');
   require('./components/core/footer-component');
+  require('./components/products-component');
 }
 
 function webComponentsInitialized () {
